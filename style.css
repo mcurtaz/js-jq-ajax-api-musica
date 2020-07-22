@@ -26,6 +26,25 @@ header img {
     margin-top: 10px;
 }
 
+nav{
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+nav select{
+  margin-left: 10px;
+  height: 25px;
+  width: 80px;
+}
+
+nav select option{
+  padding: 3px;
+}
+
+
+
 .cds-container {
     display: flex;
     justify-content: center;
