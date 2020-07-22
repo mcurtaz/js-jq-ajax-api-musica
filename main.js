@@ -15,6 +15,22 @@
 
 $(document).ready(init);
 
+function init() {
+  getAlbums();
+}
+
+
 function getAlbums() {
-console.log("hello world");
+  $.ajax({
+    url: "https://flynn.boolean.careers/exercises/api/array/music",
+    method: "GET",
+    success: function (data, state) {
+      var albums = data["response"];
+
+      console.log(albums);
+    },
+    error: function (request, error, state) {
+      console.log("Errore AJAX");
+    }
+  });
 }
